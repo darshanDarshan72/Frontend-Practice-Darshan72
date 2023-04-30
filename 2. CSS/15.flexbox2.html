@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox 2 tutorial</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+
+        }
+        ul{
+            list-style-type:none;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: cornflowerblue;
+            align-items: center;
+            height:10vh;
+            
+        }
+        li{
+            font-size: 30px;
+        }
+        li a{
+            color:pink;
+            background-color: blueviolet;
+            text-decoration: none;
+            border:3px solid blue;
+            border-radius: 20% 30%;
+            margin:10px;
+            padding:5px;
+            font-size:0.4em;
+        }
+
+        a:hover{
+            background-color: rgb(236, 197, 236);
+            color:rgb(65, 0, 139);
+        }
+
+        .site-name{
+            padding: 10px;
+            height:100px;
+            background-color: rgb(17, 17, 17);
+            color:pink;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 40px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img{
+            height:2em;
+            padding: 0;
+            border: 2px solid black;
+            margin: 0  0 0 30px;
+            border-radius: 50%;
+            
+        }
+
+        .flex-containor{
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .main-contain{
+            height: 100vh;
+            width:80%;
+            background-color: azure;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+        .sidebar{
+            height: 100vh;
+            width: 20%;
+            min-width:200px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            border-collapse: collapse;
+            box-sizing: border-box;
+        }
+
+        .footer{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            height: 50px;
+            font-size: 15px;
+        }
+        p{
+            text-align: center;
+        }
+
+        @media screen and (max-width:1002px){
+
+            .main-contain{
+            height: 100vh;
+            width:100%;
+            }
+
+            .sidebar{
+            height: 100vh;
+            width: 100%;
+            min-width:200px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="site-name">Darshan Comics</h1>
+        <nav>
+            <ul>
+                <img src="/prof.png" alt="avatar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flex-containor">
+        <div class="main-contain">
+
+        </div>
+        <div class="sidebar">
+
+        </div>
+        <div class="footer">
+            <p > This website copyrite is related to Darshan Khairnar</p>
+
+        </div>
+    </div>
+</body>
+</html>

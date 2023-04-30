@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body>
+    <form>
+        <label for="search">
+            <input type="text" name="search" list="courses">
+            <datalist id="courses">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+            </datalist>
+        </label> <br> <br>
+        <label for="name">
+            Name : <input type="text" name="name" size="50" placeholder="name">
+        </label> <br> <br>
+        <label for="age">
+            Age : <input type="number" name="age" disabled>
+        </label> <br> <br>
+        <label for="dob">
+            DOB : <input type="date" name="dob">
+        </label> <br> <br>
+        <label for="time">
+            Time : <input type="time" name="time">
+        </label> <br> <br>
+        <label for="color">
+            Color : <input type="color" name="color">
+        </label> <br> <br>
+        <label for="mailid">
+            Email : <input type="email" name="email">
+        </label> <br> <br>
+        <label for="gender">
+            Male : <input type="radio" name="gender" value="female">
+            Female : <input type="radio" name="gender" value="male">
+        </label> <br> <br>
+        <label for="education">
+            SSC : <input type="checkbox" name="education" value="SSC">
+            HSC : <input type="checkbox" name="education" value="HSC">
+            Diploma : <input type="checkbox" name="education" value="Diploma">
+            Bachloer : <input type="checkbox" name="education" value="Bachloer">
+            Master : <input type="checkbox" name="education" value="Master">
+        </label> <br> <br>
+        <label for="file">
+            File : <input type="file" type="multipart/file" name="pdf">
+        </label> <br> <br>
+        <label for="url">
+           Website : <input type="url" name="website">
+        </label> <br> <br>
+        <label for="salary">
+            Salary : <input type="range" name="salary" min="3" max="20">
+        </label> <br> <br>
+        <label for="city">
+            City : <select name="city">
+                <optgroup label="city1">
+                    <option value="Malegaon">Malegaon</option>
+                    <option value="Talegaon">Talegaon</option>
+                </optgroup>
+                <optgroup label="city2">
+                    <option value="Pune">Pune</option>
+                    <option value="Nashik">Nashik</option>
+                </optgroup>
+            </select>
+        </label> <br> <br>
+        <label for="description">
+            Description : <textarea name="description" id="" cols="50" rows="10"></textarea>
+        </label> <br> <br>
+        <label for="search">
+            Search : <input type="search" name="search">
+        </label> <br> <br>
+        <label for="submit">
+            <input type="submit">
+        </label>
+    </form>
+</body>
+</html>

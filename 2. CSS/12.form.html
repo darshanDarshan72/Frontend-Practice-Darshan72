@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form CCS Turorial</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin:10px 30px;
+            padding: 20px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+        }
+
+        .container{
+            padding:10px;
+            margin:5px 20px 15px 20px;
+            background-color: beige;
+            border: 2px solid rgb(114, 107, 98);
+            border-radius: 5px;
+
+        }
+
+        .container h1{
+            text-align: center;
+        }
+
+        input[type=text],
+        input[type=number]
+        {
+            width:100%;
+            padding: 5px;
+            border-radius: 3px;
+            border:2px solid black;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Form</h1>
+        <label for="fname">First Name : </label>
+        <input type="text" class="text" name="fname" placeholder="Darshan...">
+        <br>
+        <label for="lname">Last Name : </label>
+        <input type="text" class="text" name="lname" placeholder="Khairnar...">
+        <br>
+        <label for="mono">Mobial Number : </label>
+        <input type="number" class="text" name="mono" placeholder="1234..">
+        <form>
+        </form>
+    </div>
+</body>
+</html>

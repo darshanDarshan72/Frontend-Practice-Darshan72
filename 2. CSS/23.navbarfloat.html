@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar using float</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            background-color: green;
+            width: 100%;
+            list-style-type: none;
+            overflow: auto;
+        }
+
+        li{
+            color: aliceblue;
+            padding: 10px 15px;
+            float: left;
+        }
+
+        #profile{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Products</li>
+            <li>Contact Us</li>
+            <li id="profile">Profile</li>
+        </ul>
+    </div>
+</body>
+</html>

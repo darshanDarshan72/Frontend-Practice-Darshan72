@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in CSS</title>
+    <style>
+
+        body{
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container{
+            perspective: 800px;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            transition: all 0.5s ease;
+            transform-style: preserve-3d;
+        }
+
+        .front,.back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+            box-sizing: border-box;
+            /* backface-visibility: hidden; */
+        }
+
+        .front{
+            color: blueviolet;
+            background-color: aqua;
+            border: 2px solid blueviolet;
+            z-index: 2;
+            backface-visibility: hidden;
+        }
+
+        .back{
+            color: aqua;
+            background-color: blueviolet;
+            border: 2px solid aqua;
+            transform: rotateY(180deg);
+            z-index: 1;
+        }
+
+        .container:hover .box{
+            transform: rotateY(180deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="front">
+                Front
+            </div>
+            <div class="back">
+                Back
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Website</title>
+    <style>
+      /* In this page i have used element,class and Id selector and also multiple selectors in at once */
+      p{
+        color: orange;
+      }
+      table,th,td{
+        border: 1px solid black;
+        width: 100%;
+      }
+      #header
+      {
+        color:red;
+      }
+      legend
+      {
+        background-color: navajowhite;
+      }
+      .skil
+      {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+
+  <header>
+      <fieldset> 
+      <legend> <b> Personal Information </b> </legend>
+      <img src="pass.jpeg" alt="My Photo" height=300>
+    <h3 style="font-size: 150%; color: green;">Darshan Naresh Khairnar</h3>
+    <p>I am Mechanical Engineering Student at D. Y. Patil College of Engineering, Akurdi. I am Coding Inthusiast and I have 5 Star rank in C programming, C++ , Python and Java on Hackerrank. 
+      I have also knowledge about Artificial Intelligence and Machine Learning. My short term goal is to become full stack developer and in future I want to learn more about Cloud Technology. 
+    </p>
+
+    <b id="header"> Other Details </b>
+    <ul>
+      <li>Father's Name : Naresh Khairnar</li>
+      <li>Mother's Name : Bharti Khairnar </li>
+      <li>Date of Birth : 7th December 2000 </li>
+      <li>Birth Place : Dhule </li>
+      <li>Maratiial Status : Single </li>
+      <li>Roll No : <strong> BEMEC364</strong>  </li>
+      <li>Address : <em> Gurudwara Chouk, Near Akurdi Railway Station, Pincode-411 015 </em> </li>
+    </ul>
+  </fieldset>
+  </header>
+    <main>
+      <section>
+        <br>
+        <fieldset>
+          <legend><b>Educationl Details</b> </legend>
+          <table>
+              <tr>
+                <th>College</th>
+                <th>Board</th>
+                <th>CGPA / Percentage</th>
+              </tr>
+              <tr>
+                <td>D. Y. Patil College of Engineering, Akurdi </td>
+                <td>SPPU</td>
+                <td>9.79 / 10</td>
+              </tr>
+              <tr>
+                <td>Government Polytechnic Awasari Khurd, Pune</td>
+                <td>MSBTE</td>
+                <td>88 / 100</td>
+              </tr>
+              <tr>
+                <td>K. B. H. Vidyalaya Malegaon</td>
+                <td>State Board</td>
+                <td>89.60 / 100</td>
+              </tr>
+          </table>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend> <b> Skills </b></legend>
+          <ol>
+            <li class="skil"><b>Programming Languages :</b> C/C++, Python, Core Java, Advance Java</li>
+            <li class="skil"><b>Web Programming :</b> HTML, CSS, JavaScript, Bootstrap, React, SpringBoot, Hibernate, MySQL, MongoDB</li>
+            <li class="skil"><b>Computer Science Subjects :</b> OOPs, DBMS, OS, CN, DSA, SDLC and STLC, System Design</li>
+            <li class="skil"><b>Computer Science Subjects :</b> OOPs, DBMS, OS, CN, DSA, SDLC and STLC, System Design</li>
+            <li class="skil"><b>Software Skills : </b>Microsoft Office,Word, and Excel, VS Code, Eclipse, netBeans, Git and GitHub</li>
+          </ol>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend><b>Links</b></legend>
+          <ul>
+            <li> <a href="https://www.linkedin.com/in/darshankhairnar72/" target="_blank"> Linked In</a></li>
+            <li> <a href="https://www.hackerrank.com/dashboard" target="_blank">Hackerrank </a></li>
+          </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend><b>Contact Me</b></legend>
+          <form>
+            <label for="First Name">First Name : </label>
+            <input type="text" name="fname" id="fname">
+            <label for="Last Name"> Last Name : </label>
+            <input type="text" name="lname" id="lname">
+            <br>
+            <label for="Gender"> Gender :  </label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="felame">
+            <label for="female">Female</label>
+
+            <br>
+            <label for="Highest Education">Highest Education : </label>
+            <input type="checkbox" name="highest_education" id="HSC">
+            <label for="HSC"> HSC</label>
+            <input type="checkbox" name="highest_education" id="Diploma">
+            <label for="Diploma">Diploma</label>
+
+            <br>
+            <label for="E-mail">Email ID : </label>
+            <input type="email" name="emailid" id="mailid">
+
+            <br>
+            <label for="message">Your Message : </label>
+            <br>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="submit">
+          </form>
+        </fieldset>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

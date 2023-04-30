@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive page</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+        .brek{
+            display: block;
+        }
+        .container{
+            box-sizing: content-box;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .box1,.box2,.box3,.box4{
+            display: inline-block;
+            width:20vw;
+            height:fit-content;
+            border:2px solid black;
+            padding: 20px;
+        }
+
+        .box1{
+            background-color: yellow;
+        }
+        .box2{
+            background-color: pink;
+        }
+        .box3{
+            background-color: blanchedalmond;
+        }
+        .box4{
+            background-color: blue;
+        }
+
+        @media screen and (min-width:600px) {
+
+            .box1,.box2{
+            display: inline-block;
+            width:20%;
+            height:fit-content;
+            border:2px solid black;
+            padding: 20px;
+            }
+            .brek{
+                visibility:visible;
+            }
+            .box3,.box4{
+            display: inline-block;
+            width:20vw;
+            height:fit-content;
+            border:2px solid black;
+            padding: 20px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Page</h1>
+        <div class="box1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe. Quae, quasi animi. Animi, a laboriosam praesentium eveniet sunt quia.</p>
+
+        </div>
+        <div class="box2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloribus culpa rem sunt sint voluptate odio eum, iste hic dolorum.</p>
+        </div>
+        <br class="brek">
+        <div class="box3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex reprehenderit qui explicabo. Nulla voluptates minus modi similique ut accusantium hic?</p>
+        </div>
+        <div class="box4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum pariatur maxime excepturi dolores repellendus blanditiis expedita eaque? Nemo, cupiditate culpa.</p>
+        </div>
+
+    </div>
+</body>
+</html>

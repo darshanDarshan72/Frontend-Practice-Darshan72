@@ -1,0 +1,323 @@
+/* This is Comment
+   It can help for documentation
+*/
+
+/* Functions */
+:root{
+    --primary-color: red;
+    --secondary-color: yellow;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+
+}
+#external{
+    color:blueviolet;
+    text-align: right;
+}
+
+
+/* Colors */
+.direct{
+
+    color:var(--primary-color);
+    background-color:var(--secondary-color);
+}
+
+.rgb{
+    color: rgb(53, 85, 113);
+    background-color: rgb(185, 228, 228);
+}
+
+.rgba{
+    color:rgba(128,0,128,0.9);
+    background-color:rgba(255, 194, 204, 0.936);
+}
+.hexa{
+    color:#45450aeb;
+    background-color: #e8e8a1cd;
+}
+.hsl{
+    color:hsl(33, 92%, 46%);
+    background-color: hsl(44, 68%, 84%);
+}
+
+/* background */
+body{
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100% 100%;
+}
+
+/* borders */
+.border{
+    border-top: 2px solid red;
+    border-bottom: 2px dashed orange;
+    border-left: 3px solid purple;
+    border-right: 3px solid blue;
+    border-radius: 10px;
+}
+
+/* Box Model  */
+.box{
+    background-color: pink;
+    margin: 30px auto;
+    padding: 20px;
+    outline: 2px solid red;
+    border: 2px solid black;
+    width:80%;
+    height:300px;
+
+}
+
+/* Text Formating */
+.text{
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0;
+    padding: 20px;
+    color: rgb(4, 4, 55);
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-indent: 25px;
+    line-height: 50px;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px red;
+}
+
+/* Link  */
+.li{
+    margin: 20px;
+    padding: 20px;
+    background-color: pink;
+    border: 2px solid black;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color:black;
+}
+a:hover{
+    color: red;
+}
+a:visited{
+    color:purple;
+}
+
+/* Font */
+.fonts{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+/* List  */
+ul{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+ol{
+    list-style-image: url("/assets/arrow.jpg");
+    list-style-position: inside;
+}
+
+/* Table */
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    caption-side: bottom;
+    table-layout: auto;
+    width: calc(100% - 200px);
+}
+caption{
+    border: 1px solid black;
+}
+th{
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+}
+
+/* Box Sizing */
+.box1{
+    background-color: yellow;
+    color: red;
+    width: 400px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid black;
+    box-sizing: content-box;
+    float: left;
+    
+
+}
+
+.box2{
+    background-color: green;
+    color: yellow;
+    width: 400px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    overflow: auto;
+    
+}
+
+/* Object fit */
+.obj{
+    width: 300px;
+    height: 900px;
+    border: 2px solid black;
+    object-fit:cover;
+    object-position: top right;
+}
+
+/* Pseudo Class & Element*/
+.btn{
+    text-decoration: none;
+    background-color: blue;
+}
+a.btn:visited{
+    color:pink;
+}
+a.btn:hover{
+    color:red;
+}
+a.btn:link{
+    color:whitesmoke;
+}
+
+::selection{
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+}
+
+/* Display and Visiblity */
+.b1{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    display: inline;
+    /* visibility:hidden; */
+    /* display: none; */
+    
+}
+.b2{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    display: inline-block;
+    width: 80%;
+}
+
+/* Position */
+.relative{
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+
+.absolute{
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;
+    position: absolute;
+    right: 70px;
+    bottom: 30px;
+    z-index: 2;
+}
+.fixed{
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    display: inline-block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+}
+
+
+/* Flexbox */
+.flex-container{
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item{
+    width: 300px;
+    height: 100px;
+    margin: 20px;
+    background-color: burlywood;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* Grid */
+.grid-container{
+    background-color: yellow;
+    height: 50%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    margin: 20px;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.grid-item{
+    background-color: blue;
+    text-align: center;
+}
+
+#header{
+    grid-column:1/4;
+}
+#footer{
+    grid-column:1/4;
+}
+
+#content{
+    grid-column:1/3;
+    grid-row: 2/5;
+}
+
+#comment{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+
+#sidebar{
+    grid-column: 3/4;
+    grid-row: 2/6;
+}
+
+
