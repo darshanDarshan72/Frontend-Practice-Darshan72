@@ -49,7 +49,7 @@ body,html{
     padding: 0.8rem 1.6rem;
 }
 
-.header1 .btns .bth-filled{
+.btn-filled{
     background-color: #482BE7;
     border-radius: 6rem;
     color: #ffff;
@@ -60,13 +60,16 @@ body,html{
 
 
 /* Header 2 */
+
+.header2{
+    background-color: #ffff;
+    margin-bottom: 20px;
+}
 .header2 .top{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.8rem 4rem;
-    background-color: #ffff;
-    margin-bottom: 20px;
 }
 
 .header2 .top .logo{
@@ -115,5 +118,111 @@ body,html{
 }
 
 .header2 .bottom{
-    
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #EBEAED;
+    padding: 3rem;
+}
+
+.header2 .bottom .left{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.header2 .bottom .right{
+    width: 50%;
+}
+.header2 .bottom .right .container {
+    position: relative;
+}
+.header2 .bottom .right .container .stuff{
+    position: absolute;
+    padding: 2rem;
+    width: 50%;
+}
+
+.header2 .bottom .right .container .stuff button{
+    margin-top: 11rem;
+}
+
+.header2 .bottom .right .container img{
+    width: 100%;
+    padding: 0.4rem;
+}
+
+.header2 .bottom .left ul{
+    list-style: none;
+    margin-left: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0;
+}
+
+.header2 .bottom .left ul li{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1E0E62;
+    padding:0.4rem 0.4rem 0.4rem 0.4rem;
+    transition: all 0.3s ease;
+    margin-bottom: 0.4rem;
+}
+
+.header2 .bottom .left ul li:hover{
+    background-color: #EBEAED;
+    border-radius: 3rem;
+}
+
+/* Hero */
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2F1893;
+    padding: 4rem;
+}
+
+.hero .left{
+    color: #ffff;
+    width: 50%;
+    padding:-0 6rem;
+}
+
+.hero .right{
+    width: 50%;
+}
+
+.hero .right .wrapper{
+    position: relative;
+}
+.hero .right img{
+    position:absolute;
+    width: 55%;
+}
+.hero .right img#one{
+    z-index: 2;
+    left: 50px;
+}
+.hero .right img#two{
+    left: 150px;
+    z-index: 1;
+}
+
+.hero h1{
+    font-size: 3.5rem;
+}
+
+.hero p{
+    font-size: 1.3rem;
+}
+
+.hero button{
+    padding: 0.8rem 1rem;
+    background-color: #25DAC5;
+    border: none;
+    border-radius: 3rem;
+    color: #ffff;
+    font-weight: 600;
+    margin-top: 2rem;
 }
